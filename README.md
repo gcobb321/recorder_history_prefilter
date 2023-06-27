@@ -1,4 +1,4 @@
-# Recorder History Prefilter   
+# Home Assistant Recorder History Prefilter
 
 The HA Recorder module was modified in HA 2023.6.0 to no longer allow a custom component to insert a sensor or other type of entity into the *_exclude_e* list that defined the entities that should not be added to the History database (home_assistant_v2.db).
 
