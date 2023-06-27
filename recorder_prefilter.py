@@ -10,13 +10,6 @@
 #   This module fixes that problem by using a code injection process to provide a
 #   local prefilter to determine if an entity should be added before the Recorder filter.
 #
-#   Generally, it does the following:
-#       1. Define the filter to be injected into the Recorder (entity_filter)
-#       2. Get the Recorder instance from the ha data.
-#       3. Get the entity_filter and _event_listener functions.
-#       4. Inject the local filter function (entity_filter) into the Recorder.
-#       5. Remove the Recorder that listener for event/state changes.
-#       6. Reinitialize the Recorder listener to link to the local prefilter.
 #
 #   This injection has two methods:
 #       add_filter - Add entities to the filter list
@@ -41,13 +34,7 @@
 #           recorder_prefilter.remove_filter(hass, ['filter_entity2', 'filter_entity3'])
 #
 #
-#   Logger examples:
-#   ----------------
-#       custom_components.icloud3.support.recorder_prefilter: debug
-#       custom_components.places.recorder_prefilter: debug#
-#
-#
-#   Gary Cobb, iCloud3
+#   Gary Cobb, iCloud3 iDevice Tracker, aka geekstergary
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 from homeassistant.core import HomeAssistant
@@ -55,7 +42,7 @@ from inspect import getframeinfo, stack
 import logging
 _LOGGER = logging.getLogger(__name__)
 
-
+VERSION = 1.0
 
 def add_filter(hass: HomeAssistant, entities=None):
     '''
