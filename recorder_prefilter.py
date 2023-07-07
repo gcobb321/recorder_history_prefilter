@@ -38,7 +38,10 @@
 #                                       ['filter_entity2', 'filter_entity3'])
 #
 #
-#   Gary Cobb, iCloud3 iDevice Tracker, aka geekstergary
+#   Gary Cobb, @gcobb321, geekstergary, iCloud3 developer
+#   iCloud3 iDevice Tracker custom component - An advanced iDevice tracker
+#      that uses Apple iCloud account and HA Companion App data for presence
+#      detection and location based automations.
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 import logging
