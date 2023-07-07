@@ -22,7 +22,7 @@
 #       multiple entities - list of entity ids
 #
 #       'sensor.' will be added to the beginning of the entity id
-#       if its type is not specifid
+#       if its type is not specified
 #
 #     recorder_prefilter.add_filter(hass, 'filter_id1')
 #     recorder_prefilter.add_filter(hass, ['filter_entity2', 'filter_entity3'])
